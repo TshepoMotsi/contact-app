@@ -1,0 +1,6 @@
+<section class="contactapp">
+  <app-contact-list-header (add)="onAddContact($event)"></app-contact-list-header>
+  <app-contact-list [contacts]="contacts" (toggleComplete)="onToggleContactComplete($event)"
+    (remove)="onRemoveContact($event)" (update)="onUpdateContact($event)"></app-contact-list>
+  <app-contact-list-footer [contacts]="contacts"></app-contact-list-footer>
+</section>

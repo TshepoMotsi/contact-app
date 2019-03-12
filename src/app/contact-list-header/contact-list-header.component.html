@@ -1,0 +1,13 @@
+<header class="header">
+  <h1>Contacts (Press "Enter" to save contact)</h1>
+  <div (keyup.enter)="addContact()">
+      <input class="new-todo" 
+      placeholder="Enter contact title" 
+      autofocus="" 
+      [(ngModel)]="newContact.title"
+      style="margin-bottom: 25px;">
+      <input class="new-todo" 
+      placeholder="Enter contact email"
+      [(ngModel)]="newContact.email">
+  </div>
+</header>

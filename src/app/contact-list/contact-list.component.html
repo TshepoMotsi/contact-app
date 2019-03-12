@@ -1,0 +1,9 @@
+<section class="main" *ngIf="contacts.length > 0">
+  <ul class="todo-list">
+    <li *ngFor="let contact of contacts" [class.completed]="contact.complete">
+      <app-contact-list-item [contact]="contact" (toggleComplete)="onToggleContactComplete($event)"
+        (remove)="onRemoveContact($event)" (update)="onUpdateContact($event)">
+      </app-contact-list-item>
+    </li>
+  </ul>
+</section>

@@ -1,0 +1,10 @@
+<div class="view">
+  <input class="toggle" style="margin-top: 21px;" type="checkbox" (click)="toggleContactComplete(contact)" [checked]="contact.complete">
+  <p>
+    <label><strong>{{contact.title}}</strong></label>
+    <label style="padding-bottom: 0; padding-top: 0;">({{contact.email}})</label>
+  </p>
+  <span>
+      <button class="destroy" style="margin-top: 13px;" (click)="removeContact(contact)"></button>
+  </span>
+</div>
